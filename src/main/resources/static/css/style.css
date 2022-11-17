@@ -26,3 +26,33 @@ img {
 ul, li {
     list-style: none;
 }
+
+.path-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
+    height: 42px;
+}
+
+.path-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: auto;
+    height: 42px;
+}
+
+.path-text {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.path-line strong {
+    font-size: 15px;
+    margin-left: 5px;
+
+    font-weight: 600;
+}

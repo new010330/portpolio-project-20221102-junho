@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/header.css">
     <link rel="stylesheet" href="/static/css/style.css">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
     <title>프롬바이오 홈페이지</title>
 </head>
 <body>
@@ -35,10 +36,10 @@
                                 <li class="top-list">
                                     <a href="/member/join.html" class="account-link">회원가입</a>
                                 </li>
-                                <li class="top-list">
-                                    <div class="visible">
-                                        <a href="/myshop/index.html" class="account-link">커뮤니티</a>
-                                    </div>
+                                <li class="top-list hidden-box">
+                                    <a href="/myshop/index.html" class="account-link">커뮤니티</a>
+                                </li>
+                                <div class="invisible">
                                     <div class="board-box">
                                         <a href="/board/free/list1.html" class="box-list">공지사항</a>
                                         <a href="/board/gallery/list2.html" class="box-list">이벤트</a>
@@ -46,7 +47,7 @@
                                         <a href="/board/review/list4.html" class="box-list">상품후기</a>
                                         <a href="/board/free/list5.html" class="box-list">자주묻는질문</a>
                                     </div>
-                                </li>
+                                </div>   
                             </ul>
                         </div>
                     </div>

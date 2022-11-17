@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/header.css">
-    <link rel="stylesheet" href="/static/css/login.css">
+    <link rel="stylesheet" href="/static/css/signup.css">
     <link rel="stylesheet" href="/static/css/style.css">
     <title>프롬바이오 홈페이지</title>
 </head>
@@ -89,42 +89,68 @@
         <script src="/static/js/header.js"></script>
     </header>
     <main>
-        <div class="login-page">
-            <div class="login-page-line">
+        <div class="signup-page">
+            <div class="signup-page-line">
                 <div class="path-info">
                     <div class="path-line">
                         <a href="/templates/index.html" class="path-text">홈</a>
-                        <strong class="path-text"><span>></span> 로그인</strong>
-                    </div>
-                </div>
-                <div class="login-box">
-
-                    <div class="login-box-line">
-                        <div class="login-text">
-                            <h3>LOGIN</h3>
-                        </div>
-                        <div class="user-login">
-                            <button class="login-select">회원 로그인</button>
-                            <button class="login-select">비회원 주문조회</button>
-                        </div>
-                        <form action="">
-                                <input type="text" class="login-input" placeholder="아이디">
-                                <input type="password" class="login-input" placeholder="비밀번호">
-                                <button class="login-button">로그인</button>
-                        </form>
-                        <div class="sns-login-input">
-                            <input type="text">
-                        </div>
-                        <div>
-                            <a href="" class="find-login-info">아이디 찾기</a>
-                            <a href="" class="find-login-info">비밀번호 찾기</a>
-                            
-                        </div>
-    
-                        <div>회원가입</div>
+                        <strong class="path-text"><span>></span> 회원가입</strong>
                     </div>
                 </div>
             </div>
+        </div>
+        <div>
+            <h2>회원가입</h2>
+        </div>
+        <div>
+            <h2>sns 계정으로 회원가입</h2>
+            <a href="">네이버로 로그인</a>
+            <a href="">구글로 로그인</a>
+        </div>
+        <div>
+            <div>회원인증</div>
+            <div>
+                <div>
+                    <input type="checkbox">
+                    휴대폰인증
+                </div>
+                <div>
+                    <a href=""><img src="">휴대폰 인증</a>
+                </div>
+                <p>본인 명의의 휴대폰으로 본인인증을 진행합니다.</p>
+            </div>
+            <table>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">아이디</th>
+                        <td>
+                            <input type="text">
+                            (영문소문자/숫자, 4~16자)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">비밀번호</th>
+        
+                    </tr>
+                    <tr>
+                        <th scope="row">비밀번호 확인</th>
+        
+                    </tr>
+                    <tr>
+                        <th scope="row">이름</th>
+        
+                    </tr>
+                    <tr>
+                        <th scope="row">휴대전화</th>
+        
+                    </tr>
+                    <tr>
+                        <th scope="row">이메일</th>
+        
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </main>
 </body>
