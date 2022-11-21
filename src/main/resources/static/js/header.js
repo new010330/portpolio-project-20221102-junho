@@ -1,5 +1,4 @@
 const hiddenBox = document.querySelector(".hidden-box");
-const boardBox = document.querySelector(".board-box");
 
 hiddenBox.onmouseenter = () => {
     const invisible = document.querySelector(".invisible");
@@ -8,8 +7,6 @@ hiddenBox.onmouseenter = () => {
     invisible.onmouseout = () => {
         invisible.classList.toggle("invisible");
     }
-    
-    
 }
 
 hiddenBox.onmouseout = () => {

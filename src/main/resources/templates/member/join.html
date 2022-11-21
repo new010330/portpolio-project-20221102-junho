@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/join.css">
     <link rel="stylesheet" href="/static/css/style.css">
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <title>프롬바이오 홈페이지</title>
+    <title>회원가입</title>
 </head>
 <body>
     <header>
@@ -93,5 +94,96 @@
         </div>
         <script src="/static/js/header.js"></script>
     </header>
+    <main>
+        <div class="main-container">
+            <div class="signup-page">
+                <div class="signup-page-line">
+                    <div class="path-info">
+                        <div class="path-line">
+                            <a href="/templates/index.html" class="path-text">홈</a>
+                            <strong class="path-text"><span>></span> 회원가입</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-top-text">
+                <h2>회원가입</h2>
+            </div>
+            <div class="sns-login-box">
+                <h3>sns 계정으로 회원가입</h3>
+                <div class="sns-login-link">
+                    <ul>
+                        <li>
+                            <a href="" class="sns-link-box">네이버로 로그인</a>
+                        </li>
+                        <li>
+                            <a href="" class="sns-link-box">구글로 로그인</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <table>
+                    <tr class="authMember">
+                        <th scope="row">회원인증</th>
+                        <td>
+                            <div class="chk-box-line">
+                                <input type="radio" class="check-box">
+                                휴대폰인증
+                            </div>
+                            <div class="auth-link">
+                                <a href=""><span>휴대폰 인증</span></a>
+                            </div>
+                            <p>본인 명의의 휴대폰으로 본인인증을 진행합니다.</p>
+                        </td>
+                    </tr>
+                </table>
+                
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row">아이디</th>
+                            <td>
+                                <input type="text" class="login-input">
+                                (영문소문자/숫자, 4~16자)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">비밀번호</th>
+                            <td>
+                                <input type="password" class="login-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">비밀번호 확인</th>
+                            <td>
+                                <input type="password" class="login-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이름</th>
+                            <td>
+                                <input type="text" class="login-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">휴대전화</th>
+                            <td>
+                                <input type="tel" class="login-input tel1">-
+                                <input type="tel" class="login-input tel2">-
+                                <input type="tel"  class="login-input tel3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이메일</th>
+                            <td>
+                                <input type="email" class="login-input">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

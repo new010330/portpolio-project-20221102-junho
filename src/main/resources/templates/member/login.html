@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/header.css">
-    <link rel="stylesheet" href="/static/css/signup.css">
+    <link rel="stylesheet" href="/static/css/login.css">
     <link rel="stylesheet" href="/static/css/style.css">
-    <title>프롬바이오 홈페이지</title>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>로그인</title>
 </head>
 <body>
     <header>
         <div class="header-container">
+            <div class="top-banner">
+                <a href="#">광고</a>
+            </div>
             <div class="bar">
                 <div class="top-contents">
                     <div class="bar-top-line">
@@ -28,21 +32,23 @@
                         <div class="right-contents">
                             <ul class="account-box-list">
                                 <li class="top-list">
-                                    <a href="/member/login.html" class="account-link">로그인</a>
+                                    <a href="/member/login" class="account-link">로그인</a>
                                 </li>
                                 <li class="top-list">
-                                    <a href="/member/join.html" class="account-link">회원가입</a>
+                                    <a href="/member/join" class="account-link">회원가입</a>
                                 </li>
-                                <li class="top-list">
-                                    <a href="/myshop/index.html" class="account-link visible">커뮤니티</a>
-                                    <div class="board-box hidden">
-                                        <a href="/board/free/list1.html" class="box-list">공지사항</a>
-                                        <a href="/board/gallery/list2.html" class="box-list">이벤트</a>
-                                        <a href="/board/product/list3.html" class="box-list">상품문의</a>
-                                        <a href="/board/review/list4.html" class="box-list">상품후기</a>
-                                        <a href="/board/free/list5.html" class="box-list">자주묻는질문</a>
+                                <li class="top-list hidden-box">
+                                    <a href="/myshop/index" class="account-link">커뮤니티</a>
+                                </li>
+                                <div class="invisible">
+                                    <div class="board-box">
+                                        <a href="/board/free/list1" class="box-list">공지사항</a>
+                                        <a href="/board/gallery/list2" class="box-list">이벤트</a>
+                                        <a href="/board/product/list3" class="box-list">상품문의</a>
+                                        <a href="/board/review/list4" class="box-list">상품후기</a>
+                                        <a href="/board/free/list5" class="box-list">자주묻는질문</a>
                                     </div>
-                                </li>
+                                </div>   
                             </ul>
                         </div>
                     </div>
@@ -50,7 +56,7 @@
                 <div class="middle-bar">
                     <div class="bar-middle-line">
                         <div class="home-link">
-                            <a href="/templates/index.html"><img class="site-logo" src="/static/images/icon/site_logo.png"></a>
+                            <a href="/index"><img class="site-logo" src="/static/images/icon/site_logo.png"></a>
                         </div>
                         <div class="search-box">
                             <input type="text" class="search-input">
@@ -62,7 +68,7 @@
                                     <a href="/order/basket.html"><img class="cart-icon" src="/static/images/icon/cart.png"></a>
                                 </li>
                                 <li class="mypage-menu">
-                                    <a href="/myshop/index.html"><img class="profile-icon" src="/static/images/icon/profile.png" alt=""></a>
+                                    <a href="/myshop/index.html"><img class="profile-icon" src="/static/images/icon/profile.png"></a>
                                 </li>
                             </ul>
                         </div>
@@ -89,68 +95,42 @@
         <script src="/static/js/header.js"></script>
     </header>
     <main>
-        <div class="signup-page">
-            <div class="signup-page-line">
+        <div class="login-page">
+            <div class="login-page-line">
                 <div class="path-info">
                     <div class="path-line">
                         <a href="/templates/index.html" class="path-text">홈</a>
-                        <strong class="path-text"><span>></span> 회원가입</strong>
+                        <strong class="path-text"><span>></span> 로그인</strong>
+                    </div>
+                </div>
+                <div class="login-box">
+
+                    <div class="login-box-line">
+                        <div class="login-text">
+                            <h3>LOGIN</h3>
+                        </div>
+                        <div class="user-login">
+                            <button class="login-select">회원 로그인</button>
+                            <button class="login-select">비회원 주문조회</button>
+                        </div>
+                        <form action="">
+                                <input type="text" class="login-input" placeholder="아이디">
+                                <input type="password" class="login-input" placeholder="비밀번호">
+                                <button type="button" class="login-button">로그인</button>
+                        </form>
+                        <div class="sns-login-input">
+                            <input type="text">
+                        </div>
+                        <div>
+                            <a href="" class="find-login-info">아이디 찾기</a>
+                            <a href="" class="find-login-info">비밀번호 찾기</a>
+                            
+                        </div>
+    
+                        <div>회원가입</div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div>
-            <h2>회원가입</h2>
-        </div>
-        <div>
-            <h2>sns 계정으로 회원가입</h2>
-            <a href="">네이버로 로그인</a>
-            <a href="">구글로 로그인</a>
-        </div>
-        <div>
-            <div>회원인증</div>
-            <div>
-                <div>
-                    <input type="checkbox">
-                    휴대폰인증
-                </div>
-                <div>
-                    <a href=""><img src="">휴대폰 인증</a>
-                </div>
-                <p>본인 명의의 휴대폰으로 본인인증을 진행합니다.</p>
-            </div>
-            <table>
-
-                <tbody>
-                    <tr>
-                        <th scope="row">아이디</th>
-                        <td>
-                            <input type="text">
-                            (영문소문자/숫자, 4~16자)
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">비밀번호</th>
-        
-                    </tr>
-                    <tr>
-                        <th scope="row">비밀번호 확인</th>
-        
-                    </tr>
-                    <tr>
-                        <th scope="row">이름</th>
-        
-                    </tr>
-                    <tr>
-                        <th scope="row">휴대전화</th>
-        
-                    </tr>
-                    <tr>
-                        <th scope="row">이메일</th>
-        
-                    </tr>
-                </tbody>
-            </table>
         </div>
     </main>
 </body>
