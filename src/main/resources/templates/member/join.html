@@ -145,6 +145,7 @@
                             <th scope="row">아이디</th>
                             <td>
                                 <input type="text" class="login-input">
+                                <span class="error-invisible"></span>
                                 (영문소문자/숫자, 4~16자)
                             </td>
                         </tr>
@@ -152,36 +153,47 @@
                             <th scope="row">비밀번호</th>
                             <td>
                                 <input type="password" class="login-input">
+                                (영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">비밀번호 확인</th>
                             <td>
                                 <input type="password" class="login-input">
+                                <span class="error-invisible"></span>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">이름</th>
                             <td>
                                 <input type="text" class="login-input">
+                                <span class="error-invisible"></span>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">휴대전화</th>
                             <td>
-                                <input type="tel" class="login-input tel1">-
+                                <select name="mobile" class="tel1">
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                </select>-
                                 <input type="tel" class="login-input tel2">-
                                 <input type="tel"  class="login-input tel3">
+                                <span class="error-invisible"></span>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">이메일</th>
                             <td>
                                 <input type="email" class="login-input">
+                                <span class="error-invisible"></span>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+                <div class="button-line">
+                    <button type="button" class="join-button">회원가입</button>
+                </div>
             </div>
         </div>
     </main>
