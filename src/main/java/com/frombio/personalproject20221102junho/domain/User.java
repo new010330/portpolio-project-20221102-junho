@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 public class User {
     private int id;
     private String user_id;
-    private String oauth_id;
+    private String oauth_username;
     private String pw;
     private String confirm_pw;
     private String name;

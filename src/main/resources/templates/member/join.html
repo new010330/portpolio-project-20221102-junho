@@ -145,7 +145,7 @@
                             <th scope="row">아이디</th>
                             <td>
                                 <input type="text" class="login-input">
-                                <span class="error-invisible"></span>
+                                <span class="validation-check errors-invisible"></span>
                                 (영문소문자/숫자, 4~16자)
                             </td>
                         </tr>
@@ -153,6 +153,7 @@
                             <th scope="row">비밀번호</th>
                             <td>
                                 <input type="password" class="login-input">
+                                <span class="validation-check errors-invisible"></span>
                                 (영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)
                             </td>
                         </tr>
@@ -160,33 +161,33 @@
                             <th scope="row">비밀번호 확인</th>
                             <td>
                                 <input type="password" class="login-input">
-                                <span class="error-invisible"></span>
+                                <span class="validation-check errors-invisible"></span>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">이름</th>
                             <td>
                                 <input type="text" class="login-input">
-                                <span class="error-invisible"></span>
+                                <span class="validation-check errors-invisible"></span>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">휴대전화</th>
                             <td>
-                                <select name="mobile" class="tel1">
+                                <select name="mobile" class="login-input tel1">
                                     <option value="010">010</option>
                                     <option value="011">011</option>
                                 </select>-
                                 <input type="tel" class="login-input tel2">-
                                 <input type="tel"  class="login-input tel3">
-                                <span class="error-invisible"></span>
+                                <span class="validation-check errors-invisible"></span>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">이메일</th>
                             <td>
                                 <input type="email" class="login-input">
-                                <span class="error-invisible"></span>
+                                <span class="validation-check errors-invisible"></span>
                             </td>
                         </tr>
                     </tbody>
@@ -196,6 +197,7 @@
                 </div>
             </div>
         </div>
+        <script src="/static/js/join.js"></script>
     </main>
 </body>
 </html>
