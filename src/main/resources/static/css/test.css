@@ -106,7 +106,7 @@ header {
     display: none;
 }
 
-.hidden-box > a:hover ~ .invisible {
+.hidden > a:hover ~ .invisible {
     display: block;
     
 }

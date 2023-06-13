@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/header.css">
-    <link rel="stylesheet" href="/static/css/login.css">
+    <link rel="stylesheet" href="/static/css/test.css">
     <link rel="stylesheet" href="/static/css/style.css">
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <title>로그인</title>
+    <title>프롬바이오 홈페이지</title>
 </head>
 <body>
     <header>
@@ -37,7 +36,7 @@
                                 <li class="top-list">
                                     <a href="/member/join" class="account-link">회원가입</a>
                                 </li>
-                                <li class="top-list hidden-box">
+                                <li class="top-list hidden">
                                     <a href="/myshop/index" class="account-link">커뮤니티</a>
                                     <div class="invisible">
                                         <div class="board-box">
@@ -56,7 +55,7 @@
                 <div class="middle-bar">
                     <div class="bar-middle-line">
                         <div class="home-link">
-                            <a href="../index.html"><img class="site-logo" src="/static/images/icon/site_logo.png"></a>
+                            <a href="/index"><img class="site-logo" src="/static/images/icon/site_logo.png"></a>
                         </div>
                         <div class="search-box">
                             <input type="text" class="search-input">
@@ -67,8 +66,17 @@
                                 <li class="item-cart">
                                     <a href="/order/basket.html"><img class="cart-icon" src="/static/images/icon/cart.png"></a>
                                 </li>
-                                <li class="mypage-menu">
+                                <li class="mypage-menu hidden">
                                     <a href="/myshop/index.html"><img class="profile-icon" src="/static/images/icon/profile.png"></a>
+                                    <div class="invisible">
+                                        <div class="board-box profile-bar">
+                                            <a href="" class="box-list">관심상품</a>
+                                            <a href="" class="box-list">주문조회</a>
+                                            <a href="" class="box-list">적립금</a>
+                                            <a href="" class="box-list">마이쿠폰폰</a>
+                                            <a href="" class="box-list">내가쓴글</a>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -92,46 +100,7 @@
                 </div>
             </div>
         </div>
-        <script src="/static/js/header.js"></script>
+        <!-- <script src="/static/js/header.js"></script> -->
     </header>
-    <main>
-        <div class="login-page">
-            <div class="login-page-line">
-                <div class="path-info">
-                    <div class="path-line">
-                        <a href="/templates/index.html" class="path-text">홈</a>
-                        <strong class="path-text"><span>></span> 로그인</strong>
-                    </div>
-                </div>
-                <div class="login-box">
-
-                    <div class="login-box-line">
-                        <div class="login-text">
-                            <h3>LOGIN</h3>
-                        </div>
-                        <div class="user-login">
-                            <button class="login-select">회원 로그인</button>
-                            <button class="login-select">비회원 주문조회</button>
-                        </div>
-                        <form action="">
-                                <input type="text" class="login-input" placeholder="아이디">
-                                <input type="password" class="login-input" placeholder="비밀번호">
-                                <button type="submit" class="login-button">로그인</button>
-                        </form>
-                        <div class="sns-login-input">
-                            
-                        </div>
-                        <div>
-                            <a href="" class="find-login-info">아이디 찾기</a>
-                            <a href="" class="find-login-info">비밀번호 찾기</a>
-                            
-                        </div>
-    
-                        <div>회원가입</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
 </body>
 </html>
