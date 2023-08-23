@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
     box-sizing: border-box;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Roboto","Noto Sans KR","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
 
     font-size: 12px;
     font-weight: 400;
@@ -12,6 +13,7 @@
 body, html {
     margin: 0px;
     padding: 0px;
+    font-family: "Roboto","Noto Sans KR","Malgun Gothic","맑은 고딕","Dotum","돋움","Apple SD Gothic Neo","AppleGothic",sans-serif;
 }
 
 a {
@@ -19,7 +21,7 @@ a {
     color: black;
 }
 
-img {
+img, button {
     cursor: pointer;
 }
 

@@ -24,6 +24,7 @@ import javax.validation.Valid;
 public class AccountApi {
 
     private final JoinService joinService;
+
     @LogAspect
     @ValidAspect
     @PostMapping("/join")

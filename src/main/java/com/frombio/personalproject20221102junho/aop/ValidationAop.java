@@ -39,6 +39,7 @@ public class ValidationAop {
 
             bindingResult.getFieldErrors().forEach(error -> {
                 errorMap.put(error.getField(), error.getDefaultMessage());
+                log.info(error.getField(), error.getDefaultMessage());
             });
 
             throw new CustomValidationException("Validation failed", errorMap);

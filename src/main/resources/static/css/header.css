@@ -31,9 +31,7 @@ header {
 
     position: relative;
 
-    padding: 0px 10px;
-
-    width: 69%;
+    width: 1080px;
     height: 42px;
 }
 
@@ -92,23 +90,16 @@ header {
 }
 
 .account-link {
+    display: block;
     color: #777777;
 
     font-size: 15px;
 
     width: auto;
     line-height: 42px;
+    height: 42px;
     
     white-space: nowrap;
-}
-
-.invisible {
-    display: none;
-}
-
-.hidden-box > a:hover ~ .invisible {
-    display: block;
-    
 }
 
 .board-box{
@@ -138,6 +129,20 @@ header {
     z-index: 1;
 }
 
+.board-box {
+    display: none;
+}
+
+.hidden-box > .account-link:hover ~ .board-box
+{
+    display: flex;
+}
+
+.board-box:hover{
+    display: flex;
+}
+
+
 .box-list {
     font-size: 15px;
     font-weight: 400;
@@ -161,7 +166,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    width: 67.5%;
+    width: 1080px;
     height: 60px;
     padding: 5px 0px;
 
@@ -174,27 +179,32 @@ header {
 }
 
 .search-box {
-    position: relative;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    width: 40%;
-
-    padding-bottom: 7px;
-    margin-top: 7px;
-}
-
-.search-input {
-    border-radius: 20px;
+    border: 2px solid #002857 !important;
+    background: #fff !important;
+    border-radius: 50px;
 
     width: 432px;
     height: 42px;
+
+
+    position: relative;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 100% !important;
+    height: 100%;
+    color: #222;
+    font-size: 18px;
+    padding: 0px 60px 0px 20px;
 }
 
 .search-btn {
     position: absolute;
+    right: 0px;
+    top: 1px;
 
     display: flex;
     justify-content: center;
@@ -264,7 +274,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    width: 67.5%;
+    width: 1080px;
     height: 50px;
 
     margin-left: auto;
